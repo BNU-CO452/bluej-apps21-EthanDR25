@@ -1,0 +1,19 @@
+Course computing = new Course("BB1DSC1", "Bsc Data Science");
+computing.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BB1DSC1: Bsc Data Science
+
+Student student1 = new Student("Ethan Dias-Richards", 22136707);
+student1.print();
+ Student ID: 22136707 Name: Ethan Dias-Richards
+student1.enrol(computing);
+student1.printCourse();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BB1DSC1: Bsc Data Science
+

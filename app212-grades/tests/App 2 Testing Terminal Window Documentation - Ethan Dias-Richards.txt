@@ -1,0 +1,38 @@
+Student ethan = new Student();
+Course datascience = new Course();
+ethan.enrol(datascience);
+ethan.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+Student ID: 22136707
+Name: Ethan Dias-Richards
+
+Course code: BB1DSC1
+Course Title: BSc (Hons) Data Science
+
+CO452 	Programming Concepts
+15 credits
+CO405 	Database Design
+15 credits
+CO450 	Computer Architectures
+15 credits
+CO456 	Web Development
+15 credits
+
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452:  Programming Concepts	  15	  68	  B
+
+ CO405:  Database Design	  15	  65	  B
+
+ CO450:  Computer Architectures	  15	  62	  B
+
+ CO456:  Web Development	  15	  59	  C
+
+
+ Final Course Grade = B

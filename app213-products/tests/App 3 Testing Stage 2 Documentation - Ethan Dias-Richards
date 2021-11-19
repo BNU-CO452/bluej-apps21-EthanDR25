@@ -1,0 +1,199 @@
+
+Product ID: 90
+Name of Product: Printer
+Stock level: 0
+
+
+stockLis1.setStockOfAProduct(81, 57);
+stockLis1.setStockOfAProduct(82, 57);
+stockLis1.setStockOfAProduct(83, 57);
+stockLis1.setStockOfAProduct(84, 57);
+stockLis1.setStockOfAProduct(85, 57);
+stockLis1.setStockOfAProduct(86, 57);
+stockLis1.setStockOfAProduct(87, 57);
+stockLis1.setStockOfAProduct(88, 57);
+stockLis1.setStockOfAProduct(89, 57);
+stockLis1.setStockOfAProduct(90, 57);
+stockLis1.buyProduct(81, 1);
+stockLis1.buyProduct(82, 18);
+stockLis1.buyProduct(83, 24);
+stockLis1.buyProduct(84, 36);
+stockLis1.buyProduct(85, 29);
+stockLis1.buyProduct(86, 28);
+stockLis1.buyProduct(87, 26);
+stockLis1.buyProduct(88, 51);
+stockLis1.buyProduct(89, 38);
+stockLis1.buyProduct(90, 32);
+stockLis1.print();
+
+ Ethan's Stock List
+ ====================
+
+Product ID: 81
+Name of Product: iPhone 7
+Stock level: 56
+
+Product ID: 82
+Name of Product: iPhone 8
+Stock level: 39
+
+Product ID: 83
+Name of Product: Apple Watch Series 8
+Stock level: 33
+
+Product ID: 84
+Name of Product: Casio Watch
+Stock level: 21
+
+Product ID: 85
+Name of Product: Sony TV
+Stock level: 28
+
+Product ID: 86
+Name of Product: Anker Charger
+Stock level: 29
+
+Product ID: 87
+Name of Product: USB Flash Drive
+Stock level: 31
+
+Product ID: 88
+Name of Product: Airpods
+Stock level: 6
+
+Product ID: 89
+Name of Product: Wallet
+Stock level: 19
+
+Product ID: 90
+Name of Product: Printer
+Stock level: 25
+
+
+stockLis1.sellProduct(81, 1);
+Selling 1 81
+stockLis1.sellProduct(82, 8);
+Selling 8 82
+stockLis1.sellProduct(83, 4);
+Selling 4 83
+stockLis1.sellProduct(84, 6);
+Selling 6 84
+stockLis1.sellProduct(85, 10);
+Selling 10 85
+stockLis1.sellProduct(86, 18);
+Selling 18 86
+stockLis1.sellProduct(87, 16);
+Selling 16 87
+stockLis1.sellProduct(88, 2);
+Selling 2 88
+stockLis1.sellProduct(89, 12);
+Selling 12 89
+stockLis1.sellProduct(90, 7);
+Selling 7 90
+stockLis1.print();
+
+ Ethan's Stock List
+ ====================
+
+Product ID: 81
+Name of Product: iPhone 7
+Stock level: 55
+
+Product ID: 82
+Name of Product: iPhone 8
+Stock level: 31
+
+Product ID: 83
+Name of Product: Apple Watch Series 8
+Stock level: 29
+
+Product ID: 84
+Name of Product: Casio Watch
+Stock level: 15
+
+Product ID: 85
+Name of Product: Sony TV
+Stock level: 18
+
+Product ID: 86
+Name of Product: Anker Charger
+Stock level: 11
+
+Product ID: 87
+Name of Product: USB Flash Drive
+Stock level: 15
+
+Product ID: 88
+Name of Product: Airpods
+Stock level: 4
+
+Product ID: 89
+Name of Product: Wallet
+Stock level: 7
+
+Product ID: 90
+Name of Product: Printer
+Stock level: 18
+
+
+stockLis1.removeProduct(85);
+stockLis1.print();
+
+ Ethan's Stock List
+ ====================
+
+Product ID: 81
+Name of Product: iPhone 7
+Stock level: 55
+
+Product ID: 82
+Name of Product: iPhone 8
+Stock level: 31
+
+Product ID: 83
+Name of Product: Apple Watch Series 8
+Stock level: 29
+
+Product ID: 84
+Name of Product: Casio Watch
+Stock level: 15
+
+Product ID: 86
+Name of Product: Anker Charger
+Stock level: 11
+
+Product ID: 87
+Name of Product: USB Flash Drive
+Stock level: 15
+
+Product ID: 88
+Name of Product: Airpods
+Stock level: 4
+
+Product ID: 89
+Name of Product: Wallet
+Stock level: 7
+
+Product ID: 90
+Name of Product: Printer
+Stock level: 18
+
+
+stockLis1.searchForPhrase("iPhone");
+Product: iPhone 7
+ID: 81
+Product: iPhone 8
+ID: 82
+stockLis1.printProductsWithLowStock();
+
+
+
+
+
+
+Product ID: 88
+Name of Product: Airpods
+Stock level: 4
+
+
+

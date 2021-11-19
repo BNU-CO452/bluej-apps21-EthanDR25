@@ -1,0 +1,38 @@
+Product product1 = new Product(81, "iPhone 8");
+product1.print();
+Product ID: 81
+Name of Product: iPhone 8
+Stock level: 0
+product1.decreaseQuantity(1);
+product1.print();
+Product ID: 81
+Name of Product: iPhone 8
+Stock level: 0
+product1.increaseQuantity(11);
+product1.print();
+Product ID: 81
+Name of Product: iPhone 8
+Stock level: 11
+product1.decreaseQuantity(3);
+product1.print();
+Product ID: 81
+Name of Product: iPhone 8
+Stock level: 8
+Product product2 = new Product(82, "Apple Watch Series 8");
+StockList stockLis1 = new StockList();
+stockLis1.add(product1);
+stockLis1.add(product2);
+stockLis1.print();
+
+ Ethan's Stock List
+ ====================
+
+Product ID: 81
+Name of Product: iPhone 8
+Stock level: 8
+
+Product ID: 82
+Name of Product: Apple Watch Series 8
+Stock level: 0
+
+

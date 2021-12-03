@@ -1,0 +1,16 @@
+Program.main({ });
+********************************
+  App21-04: Stock Application 
+    by Ethan Dias-Richards
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Search for all products containing a phrase
+    Low Stock:  Print all products with a low stock
+
+Please enter your choice: quit

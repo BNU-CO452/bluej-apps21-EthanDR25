@@ -1,0 +1,85 @@
+Program.main({ });
+********************************
+  App21-04: Stock Application 
+    by Ethan Dias-Richards
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Search for all products containing a phrase
+    Low Stock:  Print all products with a low stock
+
+Please enter your choice: remove
+
+Removing a Product
+
+Please enter a product ID: 
+23
+
+ Ethan's Stock List
+ ====================
+
+Product ID: 81
+Name of Product: iPhone 7
+Stock level: 0
+
+Product ID: 82
+Name of Product: iPhone 8
+Stock level: 0
+
+Product ID: 83
+Name of Product: Apple Watch Series 8
+Stock level: 0
+
+Product ID: 84
+Name of Product: Casio Watch
+Stock level: 0
+
+Product ID: 85
+Name of Product: Sony TV
+Stock level: 0
+
+Product ID: 86
+Name of Product: Anker Charger
+Stock level: 0
+
+Product ID: 87
+Name of Product: USB Flash Drive
+Stock level: 0
+
+Product ID: 88
+Name of Product: Airpods
+Stock level: 0
+
+Product ID: 89
+Name of Product: Wallet
+Stock level: 0
+
+Product ID: 90
+Name of Product: Printer
+Stock level: 0
+
+
+********************************
+  App21-04: Stock Application 
+    by Ethan Dias-Richards
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+    Buy:        Buy a product
+    Sell:       Sell a product
+    Search:     Search for all products containing a phrase
+    Low Stock:  Print all products with a low stock
+
+Please enter your choice: 
+Your input is blank!
+
+
+Please enter your choice: 

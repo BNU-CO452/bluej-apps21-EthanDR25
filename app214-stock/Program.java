@@ -1,6 +1,7 @@
 
 /**
- * Write a description of class Program here.
+ * This is the Program class which executes the necessary code required
+ * to run the StockApp.
  *
  * @author Ethan Dias-Richards
  * @version 2/12/2021

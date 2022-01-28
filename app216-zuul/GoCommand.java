@@ -1,4 +1,4 @@
-
+import java.util.*;
 /**
  * This command transfers the player from
  * one location to another location provided the
@@ -10,6 +10,9 @@
 public class GoCommand extends ZuulCommand
 {
     String direction;
+    Player player;
+    
+    public ArrayList<Location> checklist;
     
     public GoCommand(Game zuul, String direction)
     {
@@ -35,11 +38,13 @@ public class GoCommand extends ZuulCommand
         if (nextLocation == null) 
         {
             System.out.println("There is no exit in this direction!");
-        }
-        else 
+        }  
+        else
         {
             map.enterLocation(nextLocation);
-            System.out.println(map.getCurrentLocation().getLongDescription());
+            System.out.println(map.getCurrentLocation().getShortDescription());
+            map.decreaseFuelCapacity();
+            
         }
     }
 }

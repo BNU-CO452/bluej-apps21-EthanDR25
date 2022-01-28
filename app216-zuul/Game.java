@@ -56,8 +56,15 @@ public class Game
     private void printWelcome()
     {
         System.out.println();
-        System.out.println(" Welcome to the World of Zuul!");
-        System.out.println(" World of Zuul is a new, incredibly boring adventure game.");
+        System.out.println("Package Delivery Game");
+        System.out.println();
+        System.out.println("By");
+        System.out.println();
+        System.out.println("Ethan Dias-Richards");
+        System.out.println();
+        System.out.println("You must deliver packages to all customers");
+        System.out.println("and make it back to the warehouse without");
+        System.out.println("without running out of fuel");
         System.out.println(" Type 'help' if you need help.");
         System.out.println();
         System.out.println(MAP.getCurrentLocation().getLongDescription());

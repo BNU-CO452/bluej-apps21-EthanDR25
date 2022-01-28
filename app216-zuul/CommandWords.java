@@ -11,7 +11,13 @@ public enum CommandWords
     GO   ("go","Exit location in <direction>"),
     TAKE ("take", "Take <item> from location"),
     HELP ("help", "List all available commands"),
-    QUIT ("quit", "End the game");
+    QUIT ("quit", "End the game"),
+    DELIVER("deliver", "Delivers package"),
+    INCREASEFUELCAPACITY("get", "get more fuel"),
+    INCREASEFUELBYTWENTYEIGHT("increase fuel by 28", "Increase fuel"),
+    INCREASEFUELBYFIFTYSEVEN("increase fuel by 57", "Increase fuel capacity"),
+    CHECKFUEL("check", "Check Fuel Capacity"),
+    CHECKBALANCE("check", "Check account balance using mobile phone");
     
     public final String word;
     public final String description;

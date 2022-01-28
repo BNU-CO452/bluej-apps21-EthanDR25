@@ -1,7 +1,7 @@
 import java.util.Set;
 import java.util.HashMap;
 import java.util.Iterator;
-
+import java.util.*;
 /**
  * Class Location - a location on the map of an adventure game.
  *
@@ -20,8 +20,14 @@ import java.util.Iterator;
 public class Location 
 {
     private String description;
-    private HashMap<String, Location> exits;        // stores exits of this room.
-
+    private HashMap<String, Location> exits;
+    private boolean isDelivered;
+    // stores exits of this room.
+    public Player player;
+    
+    public ArrayList<Location> checklist;
+    
+    Location address;
     /**
      * Create a location described "description". Initially, it has
      * no exits. "description" is something like "a kitchen" or
@@ -32,7 +38,7 @@ public class Location
         this.description = description;
         exits = new HashMap<>();
     }
-
+    
     /**
      * Define an exit from this room.
      * @param direction The direction of the exit.
@@ -51,7 +57,16 @@ public class Location
     {
         return description;
     }
-
+    
+    public boolean deliverProduct()
+    {
+        return isDelivered = true;
+    }
+    
+    public void deliverAProduct()
+    {
+    }
+    
     /**
      * Return a description of the room in the form:
      *     You are in the kitchen.
@@ -60,25 +75,48 @@ public class Location
      */
     public String getLongDescription()
     {
-        return " You are " + description + ".\n" + getExitString();
+        return description;
     }
-
-    /**
+    
+    public void optionsForFuel()
+    {
+        
+    }
+    
+    public void increasePetrolOption()
+    {
+        System.out.println("Increase Fuel");
+        System.out.println("How much?" + "\n\n" + "£18: 28 gallons");
+        System.out.println("How much?" + "\n\n" + "£28: 57 gallons");
+    }
+    
+    public int increaseFuelByTwentyEight()
+    {
+        return player.getFuelAmount() + 28;
+    }
+    
+     public int increaseFuelByFiftySeven()
+    {
+        return player.getFuelAmount() + 57;
+    }
+    
+   /**
      * Return a string describing the locations's exits, 
      * for example "Exits: north west".
      */
     private String getExitString()
     {
-        String returnString = " Exits:";
+        String returnString = "Available Exits: ";
         Set<String> keys = exits.keySet();
         
         for(String exit : keys) 
         {
-            returnString += " " + exit;
+            returnString += "\n\n" + exit;
         }
         return returnString;
     }
 
+    
     /**
      * Return the room that is reached if we go from this room in direction
      * "direction". If there is no room in that direction, return null.

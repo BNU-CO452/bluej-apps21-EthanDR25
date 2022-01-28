@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Arrays;
 /**
  * This class is part of the "World of Zuul" application. 
  * "World of Zuul" is a very simple, text based adventure game.  
@@ -19,10 +20,12 @@ import java.util.ArrayList;
 public class CommandReader 
 {
     private Game game;
-    private Scanner reader; // source of command input
-
+    private Scanner reader;// source of command input
+    private Player player;
+  
     private String commandWord = null;
     private String word2 = null;
+    
     /**
      * Create a parser to read from the terminal window.
      */
@@ -41,7 +44,7 @@ public class CommandReader
         
         System.out.print(" > ");
         inputLine = reader.nextLine().toLowerCase();
-
+        
         // Find up to two words on the line.
         Scanner tokenizer = new Scanner(inputLine);
         
@@ -56,16 +59,26 @@ public class CommandReader
             }
             else word2 = null;
         }
-
         return executeCommand();
     }
-
+    
+    public void checkAccountBalance()
+    {
+        Scanner checkbalance = new Scanner(System.in);
+    }
+    
     private boolean executeCommand()
     {
         if(commandWord.equals(CommandWords.GO.word))
         {
             GoCommand go = new GoCommand(game, word2);
             go.execute();
+        }
+        else if(commandWord.equals(CommandWords.GO.word) && player.getFuelCapacity() == 0)
+        {
+            System.out.println("Game Over" + "\n");
+            System.out.println("You have run out of fuel");
+            return true;
         }
         else if(commandWord.equals(CommandWords.TAKE.word))
         {
@@ -77,6 +90,7 @@ public class CommandReader
             HelpCommand help = new HelpCommand(game);
             help.execute();
         }
+        
         else if(commandWord.equals(CommandWords.QUIT.word))
         {
             return true;  // game over
